@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="metrics">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/metrics/metrics-jetty-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/metrics/metrics-web-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/metrics/metrics-core-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/metrics/metrics-servlet-2.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

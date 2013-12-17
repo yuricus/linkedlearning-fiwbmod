@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="axis2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/amazon/axis2/axis2-kernel-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/amazon/axis2/axiom-api-1.2.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/amazon/axis2/axis2-adb-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/amazon/axis2/axiom-impl-1.2.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

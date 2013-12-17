@@ -1,0 +1,46 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta charset="utf-8">
+<head>
+    <title>Ontology Editor</title>
+</head>
+<body oncontextmenu="return false;">
+<input style="visibility: collapse;" type="text" id='prefixList' value="http://www.semanticweb.org/k0shk/ontologies/2013/5/learning, http://purl.org/vocab/aiiso/schema"/>
+<script>
+    //alert();
+</script>
+<div id='middle'>
+    <div id='container'>
+        <div id='chartX'></div>
+    </div>
+</div>
+<div id='footer' style="visibility: collapse;">
+    <h1 id='logHeader'>LOG</h1>
+    <div id="log">
+    </div>
+</div>
+
+<!--!!!!!!!!!!!!!!!!!!!!INCLUDES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<link rel="stylesheet" href="../css/general.css">
+<!--General libs-->
+<script src="../js/libs/d3.v3.js"></script>
+<script src="../js/libs/jquery-2.0.2.js"></script>
+<!--Libs for beautiful treeview-->
+<script src="../js/libs/jquery.treeview.js"></script>
+<script src="../js/libs/jquery.cookie.js"></script>
+<link rel="stylesheet" href="../css/libs/jquery.treeview.css">
+<!--My libs-->
+<script src="../js/libs/primitives.js?11"></script>
+<script src="../js/libs/klib.js?11"></script>
+<!--Main code-->
+<script src="../js/sparql.js?11"></script>
+<script src="../js/mainProcessorSimple.js?112"></script>
+
+<script>
+    startIt("chartX", "http://www.semanticweb.org/k0shk/ontologies/2013/5/learning#TheMainElementsOfOWL");
+    //startIt("chartX", document.URL.substring(document.URL.indexOf('?a=')+3));
+    //document.URL.substring(document.URL.indexOf('?a=')+3);
+</script>
+
+</body>
+</html>

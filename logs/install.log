@@ -1,0 +1,3 @@
+2013-11-12 12:21:55,310 INFO [serviceMain] install.wiki - bootstrap all wiki pages from folder: .\data\wikiBootstrapADMIN
+2013-11-12 12:21:56,873 INFO [serviceMain] install.wiki - bootstrap all wiki pages from folder: .\data\wikiBootstrapGENERAL
+2013-11-12 12:21:59,903 INFO [serviceMain] install.wiki - bootstrap all wiki pages from folder: .\data\wikiBootstrapHELP

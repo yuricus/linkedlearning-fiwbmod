@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="amazon">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/amazon/s3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/amazon/aws-java-sdk-1.1.7.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

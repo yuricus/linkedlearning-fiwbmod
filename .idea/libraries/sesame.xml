@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sesame">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/sesame/openrdf-sesame-2.7.3.1-fluidops-onejar.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sesame/RDFaParser-0.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sesame/sesame-sail-lucenesail-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

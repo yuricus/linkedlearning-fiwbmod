@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="findbugs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/findbugs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/findbugs" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib/findbugs" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/findbugs" recursive="false" type="SOURCES" />
+  </library>
+</component>

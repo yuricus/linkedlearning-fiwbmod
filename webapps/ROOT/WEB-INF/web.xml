@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app 
+	PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+	"http://java.sun.com/dtd/web-app_2_3.dtd"
+[ <!ENTITY  fajaxfragment SYSTEM "../ajax/fajaxfragment.xml" >
+<!ENTITY  webcontextparam SYSTEM "../ajax/webcontextparam.xml" >
+<!ENTITY  fiwb_errorhandler SYSTEM "fiwb_errorhandler.xml" >
+<!ENTITY  fiwb_servlets SYSTEM "fiwb_servlets.xml" >
+<!ENTITY  fiwb_jsp SYSTEM "fiwb_jsp.xml" >
+<!ENTITY  fiwb_filter SYSTEM "fiwb_filter.xml" >
+<!ENTITY  fiwb_loginfilter SYSTEM "fiwb_loginfilter.xml" >
+<!ENTITY  extensions SYSTEM "extensions.xml" >
+]	
+>
+
+<web-app>
+
+	<welcome-file-list id="WelcomeFileList">
+		<welcome-file>index-custom.jsp</welcome-file>
+		<welcome-file>index-custom.html</welcome-file>
+		<welcome-file>indexredirect.jsp</welcome-file>
+		<welcome-file>indexredirect.html</welcome-file>
+	</welcome-file-list>
+  
+	&fajaxfragment;
+
+	&fiwb_loginfilter;
+
+	&fiwb_filter;
+	
+	&extensions;
+	
+	&webcontextparam;
+	
+	&fiwb_errorhandler;
+	
+	&fiwb_servlets;
+	
+	&fiwb_jsp;
+
+	<listener>
+	    <listener-class>com.fluidops.iwb.server.IwbServletContextListener</listener-class>
+    </listener>
+    
+	<listener>
+		<listener-class>com.fluidops.iwb.monitoring.MonitoringHttpSessionListener</listener-class>
+	</listener>
+</web-app>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mina">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/mina/mina-core-2.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mina/sshd-core-0.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

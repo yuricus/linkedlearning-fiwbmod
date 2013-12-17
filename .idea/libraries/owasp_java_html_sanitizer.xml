@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="owasp-java-html-sanitizer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/owasp/owasp-java-html-sanitizer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

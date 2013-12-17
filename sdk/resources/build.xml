@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<project name="fluid-sdk" default="build" basedir=".">
+	<property name="root" location=".." />
+	
+	<!-- specification of files that are part of the solution -->
+	<patternset id="workingset-files">	
+		<!-- Please use additional patterns for exclusion -->
+	    <!-- <exclude name="config.prop"/> -->
+		<!-- <exclude name="data/**"/> -->
+	</patternset>
+	
+	
+	
+	<!-- Do not change anything below -->
+	
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+        <classpath>
+            <pathelement location="${root}/build/ant-contrib-1.0b3.jar"/>
+        </classpath>
+	</taskdef>
+	
+	<!-- 
+	  include a generated help file which contains classpath information
+	  and in addition defines the variable platform_home 
+	-->    
+	<include file="${root}/build/build-classpath.xml"/>
+	
+	<path id="sbk.path">
+		<path refid="fluid-base.path"/>
+		<pathelement location="${root}/build/fluid-sdk.jar" />
+	</path>
+	
+	<taskdef name="getUserPages" 
+		 	classname="com.fluidops.iwb.sbk.GetUserPagesTask" 
+		 	classpathref="sbk.path"/>
+		
+	<taskdef name="cleanUserPages" 
+		 	classname="com.fluidops.iwb.sbk.CleanUserPagesTask" 
+		 	classpathref="sbk.path"/>
+
+	
+	<tstamp>
+	     <format property="build.date" pattern="yyyy-MM-dd_hh:mm:ss"/>
+	</tstamp>
+	
+	
+	
+	<target name="clean">		
+		<delete dir="${root}/temp" failonerror="true" />
+		<delete dir="${root}/artifacts" failonerror="true" />
+		<mkdir dir="${root}/artifacts" />
+	</target>	
+	
+	
+	<target name="solution" depends="clean">
+		<basename file="${root}" property="solution.name"/>
+    	<!-- load solution propertes, which might override some properties -->
+    	<property file="${root}/solution.properties" />
+		<property name="solution.base.path" value="${root}"/>
+		<property name="solution.resources.path" value="${root}/resources"/>
+		<property name="solution.dest.path" value="${root}/temp/${solution.name}"/>
+		<property name="zip.path" value="${root}/artifacts/${solution.name}.zip"/>
+		
+		<!-- defaults for solution properties -->
+		<property name="solution.company" value="n/a" />
+		<property name="solution.contact" value="n/a" />
+    	<property name="solution.version" value="0.1" />
+		<property name="solution.buildby" value="n/a" />
+		
+   		<mkdir dir="${solution.dest.path}/bin"/>		
+		<manifest file="${solution.dest.path}/MANIFEST.MF">
+			<attribute name="project" value="${solution.name}" />
+			<attribute name="ProductName" value="${solution.name}" />
+			<attribute name="ProductLongName" value="${solution.longname}" />
+			<attribute name="ProductVersion" value="${solution.version}" />
+			<attribute name="version" value="${solution.version}" />
+			<attribute name="ProductContact" value="${solution.contact}" />
+			<attribute name="CompanyName" value="${solution.company}" />			
+			<attribute name="date" value="${build.date}" />
+		</manifest>
+		<if>
+		    <available file="${solution.base.path}/src"/>
+			<then>
+				<echo message="creating solution.jar from ${solution.base.path}/src"></echo>
+			    <path id="solution.classpath">
+			    	<fileset dir="${root}/lib/" includes="**/*.jar"/>
+			    	<fileset dir="${solution.base.path}" includes="lib/**/*.jar"/>
+			    	<path refid="fluid-base.path"/>
+			    </path>
+                <javac encoding="UTF-8" 
+                	classpathref="solution.classpath" 
+                	includeAntRuntime="false"
+                	destdir="${solution.dest.path}/bin" srcdir="${solution.base.path}/src" 
+                	debug="on" optimize="on" nowarn="on"
+					target="1.6" source="1.6"/>
+				<mkdir dir="${solution.dest.path}/lib"/>
+				<property name="solution.jar.path" value="${solution.dest.path}/lib/${solution.name}.jar"/>
+        	    <jar destfile="${solution.jar.path}" 
+        	    	manifest="${solution.dest.path}/MANIFEST.MF">
+					<fileset dir="${solution.dest.path}/bin" includes="**/*.class"/>
+        	    	<fileset dir="${solution.base.path}/src" includes="**/*.*" excludes="*.java"/>
+				</jar>
+		        <zip destfile="${zip.path}" update="true">
+		             <zipfileset file="${solution.jar.path}" prefix="lib/extensions"/>
+		        </zip>
+			</then>
+		</if>
+		<if>
+            <available file="${solution.resources.path}" />
+            <then>
+                <!-- is at least one file present? -->
+                <if>
+                    <length length="0" when="greater">
+                        <fileset dir="${solution.resources.path}" followsymlinks="false" />
+                    </length>
+                    <then>
+                    	<echo message="creating solution-resources.jar from ${solution.resources.path}"></echo>
+                    	<mkdir dir="${solution.dest.path}/lib" />
+                    	<property name="solution.resourcesjar.path" value="${solution.dest.path}/lib/${solution.name}-resources.jar" />
+                        <jar destfile="${solution.resourcesjar.path}"
+                            basedir="${solution.resources.path}"
+                            manifest="${solution.dest.path}/MANIFEST.MF" />
+                        <zip destfile="${zip.path}" update="true">
+                            <zipfileset file="${solution.resourcesjar.path}" prefix="userlib/override/lib" />
+                        </zip>
+                    </then>
+                </if>
+            </then>
+        </if>
+	    <zip destfile="${zip.path}" update="true">
+	    	<fileset dir="${solution.base.path}">
+	    		<patternset refid="workingset-files"></patternset>
+	    		
+	    		<!-- we do not want the following folders to be part of the solution -->
+	    		<exclude name="resources/**" />
+	    		<exclude name="src/**" />
+                <exclude name="src-override/**" />
+                <exclude name="test/**" />
+                <exclude name=".settings/**" />
+	    		<exclude name=".externalToolBuilders/**" />
+                <exclude name="bin/**" />
+                <!-- for libs that should not get shipped with the solution -->
+                <exclude name="lib-extra/**" />
+                <!-- don't include build files within the solution -->
+                <exclude name="build/**" />
+                <exclude name="**/*.gradle" />
+                
+                <!-- we also do not want to have those files in the solution -->
+                <exclude name=".classpath" />
+                <exclude name=".project" />
+            	<exclude name="solutioninfo.txt" />
+	    		<exclude name="solution.properties" />
+                <exclude name="*.launch" />
+	    		
+	    		<exclude name="artifacts/**" />
+	    		<exclude name="temp/**" />
+	    		
+
+	    	</fileset>
+	    	<zipfileset file="${solution.dest.path}/MANIFEST.MF" prefix="META-INF"/>
+	    </zip>
+	</target>
+	
+	<target name="fetchWikiPages">		
+			
+		<echo>Retrieving all user edited pages from installed instance</echo>
+		
+		<getUserPages 
+			applicationWorkingDir="${application_working_dir}"
+			targetDir="${root}">
+		</getUserPages>
+	</target>
+		
+		
+	<target name="cleanUserEditedWikiPages">		
+			
+		<echo>Deleting all user edited wiki pages from the system</echo>
+		
+		<cleanUserPages 
+			applicationWorkingDir="${application_working_dir}">
+		</cleanUserPages>
+	</target>
+				
+	<target name="pushGroovyScripts">		
+				
+		<echo>Synching Groovy scripts to application working dir</echo>
+		
+		<copy todir="${application_working_dir}/scripts">
+			<fileset dir="${root}/scripts/" />
+		</copy>
+		
+	</target>
+	
+	<target name="pushSolutionFiles" depends="pushGroovyScripts" />
+	
+	<target name="cleanApplicationWorkingDir">
+		
+		<echo>Cleaning working directory of application</echo>
+		
+		<if>
+			<not>
+				<available file="${application_working_dir}/backup-workingset" type="dir" />
+			</not>
+            <then>
+            	<fail message="Cannot clean working dir: ${application_working_dir}/backup-workingset does not exist"/>
+            </then>
+        </if>
+
+		<delete dir="${application_working_dir}/config"/>
+		<delete dir="${application_working_dir}/data/wiki"/>
+		<delete file="${application_working_dir}/config.prop"/>
+		<delete file="${application_working_dir}/secrets.xml"/>
+		
+		<copy todir="${application_working_dir}">
+			<fileset dir="${application_working_dir}/backup-workingset"/>
+		</copy>
+		
+	</target>
+	
+	<target name="build" depends="solution" />
+	
+</project>

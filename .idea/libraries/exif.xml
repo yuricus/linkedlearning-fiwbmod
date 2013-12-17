@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="exif">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/exif/xmpcore.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/exif/metadata-extractor-2.5.0-RC3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

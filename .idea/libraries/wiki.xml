@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="wiki">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/wiki/bliki-core-3.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/wiki/bzip2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/wiki/bliki-pdf-3.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/wiki/bliki-addons-3.0.19.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,15 @@
+default=http://www.fluidops.com/resource/
+dbpedia=http://dbpedia.org/ontology/
+dc=http://purl.org/dc/elements/1.1/
+dcterms=http://purl.org/dc/terms/
+xsd=http://www.w3.org/2001/XMLSchema#
+history=http://www.fluidops.com/history/
+dcat=http://www.w3.org/ns/dcat#
+fluidops=http://www.fluidops.com/
+foaf=http://xmlns.com/foaf/0.1/
+purl=http://purl.org/stuff/project/
+research=http://research.data.gov.uk/def/project/
+patent=http://patents.data.gov.uk/def/patents/
+skosCore04=http://www.w3.org/2004/02/skos/core#
+twitter=http://twitter.com/
+void=http://rdfs.org/ns/void#

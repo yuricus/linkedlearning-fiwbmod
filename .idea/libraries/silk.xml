@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="silk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/silk/paranamer-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/silk/scala-library-2.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/silk/silk-core-2.5.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="owlapi-distribution-3.4.4.3-ansell-bin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/owlapi/owlapi-distribution-3.4.4.3-ansell-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

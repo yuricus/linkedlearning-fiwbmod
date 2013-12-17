@@ -1,0 +1,483 @@
+STATUS | wrapper  | 2013/11/12 12:21:53 | --> Wrapper Started as Console
+STATUS | wrapper  | 2013/11/12 12:21:53 | Launching a JVM...
+INFO   | wrapper  | 2013/11/12 12:21:53 | command: "jre\bin\java.exe" -server -Djava.util.logging.config.file=logger.props -Dfile.encoding=UTF-8 -XX:MaxPermSize=256m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=logs -Xrs -Djava.awt.headless=true -Djava.util.Arrays.useLegacyMergeSort=true -Xmx1G -Ddummy1=DONTREMOVE -Ddummy2=DONTREMOVE -Ddummy3=DONTREMOVE -Ddummy4=DONTREMOVE -Ddummy5=DONTREMOVE -Ddummy6=DONTREMOVE -Ddummy7=DONTREMOVE -Ddummy8=DONTREMOVE -Ddummy9=DONTREMOVE -Ddummy0=DONTREMOVE -Djava.library.path="lib/wrapper" -classpath "userlib/override/classes;lib/fiwb.jar;lib/fajax.jar;lib/fbase.jar;lib/fiwb.jar;lib/commons/commons-cli-1.2.jar;lib/commons/commons-codec-1.4.jar;lib/commons/commons-discovery-0.5.jar;lib/commons/commons-fileupload-1.2.jar;lib/commons/commons-httpclient-3.1.jar;lib/commons/commons-io-2.1.jar;lib/commons/commons-lang-2.5.jar;lib/commons/commons-logging-1.1.1.jar;lib/commons/commons-net-1.4.1.jar;lib/google/guava-13.0.1.jar;lib/log4j/log4j-1.2.16.jar;lib/log4j/log4j-companions-component.jar;lib/log4j/log4j-companions-extras.jar;lib/log4j/log4j-companions-receivers.jar;lib/slf4j/slf4j-api-1.6.4.jar;lib/slf4j/slf4j-log4j12-1.6.4.jar;lib/json/json-smart-1.0.9-1.jar;lib/json/json.jar;lib/jsp-2.1/com.sun.el-2.2.0.v201108011116.jar;lib/jsp-2.1/javax.el-2.2.0.v201108011116.jar;lib/jsp-2.1/javax.servlet.jsp-2.2.0.v201112011158.jar;lib/jsp-2.1/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar;lib/jsp-2.1/org.apache.jasper.glassfish-2.2.2.v201112011158.jar;lib/jsp-2.1/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar;lib/jsp-2.1/org.eclipse.jdt.core-3.7.1.jar;lib/wrapper/wrapper.jar;lib/jetty/jetty-client-8.1.3.v20120416.jar;lib/jetty/jetty-continuation-8.1.3.v20120416.jar;lib/jetty/jetty-deploy-8.1.3.v20120416.jar;lib/jetty/jetty-http-8.1.3.v20120416.jar;lib/jetty/jetty-io-8.1.3.v20120416.jar;lib/jetty/jetty-jmx-8.1.3.v20120416.jar;lib/jetty/jetty-security-8.1.3.v20120416.jar;lib/jetty/jetty-server-8.1.3.v20120416.jar;lib/jetty/jetty-servlet-8.1.3.v20120416.jar;lib/jetty/jetty-servlets-8.1.3.v20120416.jar;lib/jetty/jetty-util-8.1.3.v20120416.jar;lib/jetty/jetty-webapp-8.1.3.v20120416.jar;lib/jetty/jetty-xml-8.1.3.v20120416.jar;lib/jetty/servlet-api-3.0.jar;lib/xml/jaxb-api.jar;lib/xml/XmlSchema-1.4.7.jar;lib/xml/xpp3_min-1.1.3.4.O.jar;lib/xml/xstream-1.2.2.jar;lib/mail/mailapi.jar;lib/mail/smtp.jar;lib/groovy/groovy-all-1.8.8.jar;lib/groovy/jansi-1.7.jar;lib/groovy/jline-0.9.94.jar;lib/antlr/antlr-2.7.7.jar;lib/antlr/stringtemplate-3.2.1.jar;lib/bsh/bsh-2.0b4.jar;lib/axis/axis.jar;lib/axis/jaxrpc.jar;lib/axis/saaj.jar;lib/axis/wsdl4j-1.5.1.jar;lib/sesame/openrdf-sesame-2.7.3.1-fluidops-onejar.jar;lib/sesame/RDFaParser-0.0.6.jar;lib/sesame/sesame-sail-lucenesail-2.2.0.jar;lib/lucene/lucene-analyzers-3.5.0.jar;lib/lucene/lucene-core-3.5.0.jar;lib/lucene/lucene-highlighter-3.5.0.jar;lib/lucene/lucene-memory-3.5.0.jar;lib/wiki/bliki-addons-3.0.19.jar;lib/wiki/bliki-core-3.0.19.jar;lib/wiki/bliki-pdf-3.0.19.jar;lib/wiki/bzip2.jar;lib/h2/h2-1.1.118.jar;lib/tar/jtar-1.0.2.jar;lib/twitter/twitter4j-core-2.1.6.jar;lib/jtidy/jtidy-r918.jar;lib/snmp/SNMP4J.jar;lib/opencloud/OpenCloud0.2.jar;lib/lastfm/last.fm-bindings-0.1.0a.jar;lib/query/commons-jxpath-1.3.jar;lib/query/gentlyWEB-utils-1.1.jar;lib/query/JoSQL-1.9.jar;lib/silk/paranamer-2.3.jar;lib/silk/scala-library-2.9.1.jar;lib/silk/silk-core-2.5.4.jar;lib/owasp/owasp-java-html-sanitizer.jar;lib/owlapi/owlapi-distribution-3.4.4.3-ansell-bin.jar;lib/jackson/jackson-core-2.1.4.jar;lib/jackson/jackson-core-asl-1.9.5.jar;lib/jackson/jackson-mapper-asl-1.9.5.jar;userlib/addons/classes" -Dwrapper.key="EKv2QVzDNMeEA29U" -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=29592 -Dwrapper.version="3.2.3" -Dwrapper.native_library="wrapper" -Dwrapper.cpu.timeout="10" -Dwrapper.jvmid=1 com.fluidops.iwb.servicedaemon.Main com.fluidops.iwb.IwbStart
+INFO   | jvm 1    | 2013/11/12 12:21:54 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2013/11/12 12:21:54 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2013/11/12 12:21:54 | 
+INFO   | jvm 1    | 2013/11/12 12:21:54 | 
+INFO   | jvm 1    | 2013/11/12 12:21:54 | WARNING - Unable to load the Wrapper's native library because none of the
+INFO   | jvm 1    | 2013/11/12 12:21:54 |           following files:
+INFO   | jvm 1    | 2013/11/12 12:21:54 |             wrapper-windows-x86-64.dll
+INFO   | jvm 1    | 2013/11/12 12:21:54 |             wrapper.dll
+INFO   | jvm 1    | 2013/11/12 12:21:54 |           could be located on the following java.library.path:
+INFO   | jvm 1    | 2013/11/12 12:21:54 |             d:\projects\Ontology\IWB51mod\fiwb\lib\wrapper
+INFO   | jvm 1    | 2013/11/12 12:21:54 |           Please see the documentation for the wrapper.java.library.path
+INFO   | jvm 1    | 2013/11/12 12:21:54 |           configuration property.
+INFO   | jvm 1    | 2013/11/12 12:21:54 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2013/11/12 12:21:54 | 
+INFO   | jvm 1    | 2013/11/12 12:21:54 |  INFO [serviceMain] (Log4JHandler.java:127) - configuring logging sub system from etc\log4j.properties
+INFO   | jvm 1    | 2013/11/12 12:21:54 |  INFO [serviceMain] (IwbStart.java:122) - Starting Information Workbench
+INFO   | jvm 1    | 2013/11/12 12:21:54 |  INFO [serviceMain] (Config.java:251) - loading config file config.prop
+INFO   | jvm 1    | 2013/11/12 12:21:54 |  INFO [serviceMain] (I18n.java:124) - Default locale: en_US
+INFO   | jvm 1    | 2013/11/12 12:21:54 |  INFO [serviceMain] (I18n.java:127) - Default character set: UTF-8
+INFO   | jvm 1    | 2013/11/12 12:21:54 |  INFO [serviceMain] (StartJetty.java:167) - Loading Jetty configuration: d:\projects\Ontology\IWB51mod\fiwb\etc\jetty.xml
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (Config.java:251) - loading config file config.prop
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (IwbServletContextListener.java:46) - Starting up Information Workbench webapp context
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (RepositoryFactory.java:111) - Repository type set to native
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (WikiStorageBulkServiceImpl.java:313) - bootstrap all wiki pages from folder: .\data\wikiBootstrapADMIN
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Admin [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FAdmin\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Backup [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FBackup\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Cache [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FCache\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Config [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FConfig\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Constraints [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FConstraints\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:55 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/ContentOverview [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FContentOverview\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Export [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FExport\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Federation [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FFederation\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Import [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FImport\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Namespaces [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FNamespaces\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Providers [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FProviders\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/SPARQLFunctions [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FSPARQLFunctions\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/SpecialPages [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FSpecialPages\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/TemplatePages [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FTemplatePages\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Upload [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FUpload\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/UserManagement [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FUserManagement\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/Widgets [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FWidgets\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/WikiDiagnostics [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FWikiDiagnostics\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/admin/WikiManagement [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fadmin%2FWikiManagement\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/history/History [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhistory%2FHistory\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiStorageBulkServiceImpl.java:313) - bootstrap all wiki pages from folder: .\data\wikiBootstrapGENERAL
+INFO   | jvm 1    | 2013/11/12 12:21:56 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/AccessForbidden [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2FAccessForbidden\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/Classes [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2FClasses\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/Context [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2FContext\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/Error/Invalid_URI_Request [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2FError%2FInvalid_URI_Request\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/FileNotFound [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2FFileNotFound\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/PageNotFound [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2FPageNotFound\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/Properties [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2FProperties\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/resource/ [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fresource%2F\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barhorizontal [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarhorizontal\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barhorizontal.default [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarhorizontal.default\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barvertical [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarvertical\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barvertical.3d [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarvertical.3d\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barvertical.default [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarvertical.default\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barvertical.stacked [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarvertical.stacked\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barvertical.stacked100 [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarvertical.stacked100\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barvertical3D [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarvertical3D\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barverticalstacked [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarverticalstacked\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/barverticalstacked100 [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fbarverticalstacked100\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/count [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fcount\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/countdaily [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fcountdaily\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/countmulti [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fcountmulti\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:57 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/line [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fline\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/line.default [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fline.default\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/linemulti [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Flinemulti\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/linemultichart [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Flinemultichart\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/map.default [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fmap.default\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/pie2d.default [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fpie2d.default\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/radar [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fradar\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/stacked [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fstacked\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/stock.countdaily [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fstock.countdaily\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/stock.line [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fstock.line\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/stock.multi.landscape [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fstock.multi.landscape\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/stock.multi.line [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fstock.multi.line\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/settings/stock.step [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fsettings%2Fstock.step\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.w3.org/1999/02/22-rdf-syntax-ns#Property [.\data\wiki\http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23Property\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.w3.org/2000/01/rdf-schema#Class [.\data\wiki\http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23Class\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.w3.org/2002/07/owl#AnnotationProperty [.\data\wiki\http%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23AnnotationProperty\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.w3.org/2002/07/owl#Class [.\data\wiki\http%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23Class\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.w3.org/2002/07/owl#DatatypeProperty [.\data\wiki\http%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23DatatypeProperty\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.w3.org/2002/07/owl#ObjectProperty [.\data\wiki\http%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23ObjectProperty\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.w3.org/2002/07/owl#Ontology [.\data\wiki\http%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23Ontology\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.w3.org/ns/dcat#Dataset [.\data\wiki\http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23Dataset\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:58 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.w3.org/ns/dcat#Distribution [.\data\wiki\http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23Distribution\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://xmlns.com/foaf/0.1/Organization [.\data\wiki\http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FOrganization\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://xmlns.com/foaf/0.1/Project [.\data\wiki\http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FProject\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://twitter.com/TwitterUser [.\data\wiki\Template%3Ahttp%3A%2F%2Ftwitter.com%2FTwitterUser\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.fluidops.com/Context [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.fluidops.com%2FContext\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.w3.org/1999/02/22-rdf-syntax-ns#Property [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23Property\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.w3.org/2000/01/rdf-schema#Class [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23Class\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.w3.org/2002/07/owl#AnnotationProperty [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23AnnotationProperty\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.w3.org/2002/07/owl#Class [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23Class\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.w3.org/2002/07/owl#DatatypeProperty [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23DatatypeProperty\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.w3.org/2002/07/owl#ObjectProperty [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23ObjectProperty\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.w3.org/2002/07/owl#Ontology [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23Ontology\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.w3.org/ns/dcat#Dataset [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23Dataset\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://www.w3.org/ns/dcat#Distribution [.\data\wiki\Template%3Ahttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23Distribution\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://xmlns.com/foaf/0.1/Document [.\data\wiki\Template%3Ahttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FDocument\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://xmlns.com/foaf/0.1/Organization [.\data\wiki\Template%3Ahttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FOrganization\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of Template:http://xmlns.com/foaf/0.1/Project [.\data\wiki\Template%3Ahttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FProject\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiStorageBulkServiceImpl.java:313) - bootstrap all wiki pages from folder: .\data\wikiBootstrapHELP
+INFO   | jvm 1    | 2013/11/12 12:21:59 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/ActionableResult [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FActionableResult\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Admin [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FAdmin\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/AdvancedWidgetConfiguration [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FAdvancedWidgetConfiguration\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/AdvancedWikiSyntax [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FAdvancedWikiSyntax\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/APIExtensions [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FAPIExtensions\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Authoring [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FAuthoring\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/BackupDatabase [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FBackupDatabase\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/BarChart [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FBarChart\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/BAR_CLUSTERED-settings [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FBAR_CLUSTERED-settings\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/BAR_HORIZONTAL-settings [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FBAR_HORIZONTAL-settings\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/BAR_VERTICAL-settings [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FBAR_VERTICAL-settings\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/BuildingSolutions [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FBuildingSolutions\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Cache [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FCache\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/CEvsEE [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FCEvsEE\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Chart [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FChart\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/CkanProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FCkanProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/CLI [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FCLI\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/CodeExecution [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FCodeExecution\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:00 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Configuration [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FConfiguration\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/ConfigurationForm [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FConfigurationForm\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Constraints [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FConstraints\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/ContentOverview [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FContentOverview\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/DataInput [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FDataInput\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/DataIntegration [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FDataIntegration\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/ExampleData [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FExampleData\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/FedX [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FFedX\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/GettingStarted [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FGettingStarted\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/GMap [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FGMap\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/GraphWidget [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FGraphWidget\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Heatmap [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FHeatmap\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Help [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FHelp\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/HelpSearchWidget [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FHelpSearchWidget\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/HistoricalData [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FHistoricalData\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/HistoricalDataProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FHistoricalDataProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/IFrame [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FIFrame\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Image [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FImage\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Installation [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FInstallation\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:01 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Introduction [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FIntroduction\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/KnowledgeManagement [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FKnowledgeManagement\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/LdapAllUserInfoProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FLdapAllUserInfoProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/LDAPProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FLDAPProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/LINE-settings [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FLINE-settings\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/LineChart [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FLineChart\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/MAP-settings [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FMAP-settings\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/NamespaceConfig [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FNamespaceConfig\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/NewInstance [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FNewInstance\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/News [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FNews\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/OpenRefine [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FOpenRefine\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/PieChart [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FPieChart\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/PIE_2D-settings [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FPIE_2D-settings\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/PivotWidget [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FPivotWidget\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/PlatformSDK [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FPlatformSDK\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Providers [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FProviders\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:02 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/ProviderSDK [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FProviderSDK\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/QueryResult [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FQueryResult\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/RADAR-settings [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FRADAR-settings\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/RadarChart [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FRadarChart\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/RDFandSPARQL [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FRDFandSPARQL\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/RDFExport [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FRDFExport\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/RDFImport [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FRDFImport\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/RDFProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FRDFProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/RepositoryConfiguration [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FRepositoryConfiguration\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/RSS [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FRSS\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/ScriptProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FScriptProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SDK-Bootstrap [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSDK-Bootstrap\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SDK-SystemConfiguration [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSDK-SystemConfiguration\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SDK-Workflows [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSDK-Workflows\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Search [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSearch\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SearchConfiguration [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSearchConfiguration\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SearchWidget [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSearchWidget\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SequenceProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSequenceProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Settings [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSettings\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SilkProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSilkProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:03 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Skype [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSkype\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SocialMediaWidgets [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSocialMediaWidgets\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Solutions [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSolutions\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SPARQLEndpoint [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSPARQLEndpoint\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SPARQLEndpointProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSPARQLEndpointProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SPARQLFunctions [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSPARQLFunctions\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SpecialPages [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSpecialPages\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Start [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FStart\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/StatusPage [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FStatusPage\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/STOCK-settings [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSTOCK-settings\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/StockChart [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FStockChart\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/SystemConfiguration [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FSystemConfiguration\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/TableResult [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTableResult\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/TagCloud [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTagCloud\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/TemplatePages [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTemplatePages\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Timeline [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTimeline\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Timeplot [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTimeplot\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:04 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/TOC [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTOC\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/TreeResult [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTreeResult\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/TripleEditor [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTripleEditor\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/TripleEditorWidget [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTripleEditorWidget\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Twitter [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FTwitter\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/UICustomization [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FUICustomization\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Upload [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FUpload\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/UserManagement [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FUserManagement\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/ValueBasedDataMappingProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FValueBasedDataMappingProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/ValueResolverExtensions [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FValueResolverExtensions\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/ValueResolvers [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FValueResolvers\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Views [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FViews\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/VisualizationWidgets [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FVisualizationWidgets\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/WidgetConfiguration [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FWidgetConfiguration\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Widgets [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FWidgets\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/WidgetSDK [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FWidgetSDK\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Wiki [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FWiki\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/WikiDiagnostics [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FWikiDiagnostics\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/WikiManagement [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FWikiManagement\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:05 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/WorkflowAndActionWidgets [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FWorkflowAndActionWidgets\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/XMLProvider [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FXMLProvider\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [serviceMain] (WikiFileStorage.java:107) - Storing revision 2010-01-01T00-00-00-000 of http://www.fluidops.com/help/Youtube [.\data\wiki\http%3A%2F%2Fwww.fluidops.com%2Fhelp%2FYoutube\2010-01-01T00-00-00-000.wiki]
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [serviceMain] (SparqlServlet.java:1090) - Loaded classes and properties declared in the ontology
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [serviceMain] (Properties.java:37) - passwords.properties (Не удается найти указанный файл)
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [TaskExecutor-1] (SparqlServlet.java:1108) - Loaded classes and properties based on usage
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  WARN [serviceMain] (PwdSafe.java:711) - failed to load passwd safe from secrets.xml: secrets.xml (Не удается найти указанный файл)
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [serviceMain] (PwdSafe.java:157) - Stored passwd safe into secrets.xml
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [serviceMain] (PwdSafe.java:157) - Stored passwd safe into secrets.xml
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [serviceMain] (UserManagementAdministration.java:82) - Created new user admin in group admin
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [serviceMain] (ParserFunctionsFactory.java:68) - Registering and initializing custom bliki parser functions.
+INFO   | jvm 1    | 2013/11/12 12:22:06 |  INFO [serviceMain] (ValueResolverUtil.java:56) - Initializing value resolver extensions
+INFO   | jvm 1    | 2013/11/12 12:22:07 |  INFO [serviceMain] (RMIBase.java:113) - RMI multi home support: " 172.28.2.2 172.16.86.115 "
+INFO   | jvm 1    | 2013/11/12 12:22:07 |  INFO [serviceMain] (DynamicServiceUtil.java:27) - Initializing dynamic services
+INFO   | jvm 1    | 2013/11/12 12:22:07 |  INFO [serviceMain] (XSSSafeHttpRequestFilter.java:67) - Registered additional resources to exclude from automatic XSS protection: [/sparql, /search/]
+INFO   | jvm 1    | 2013/11/12 12:22:07 |  INFO [serviceMain] (StartJetty.java:181) - HTTPS URL: https://172.28.2.2:8443
+INFO   | jvm 1    | 2013/11/12 12:22:07 |  INFO [serviceMain] (StartJetty.java:182) - HTTP URL: http://172.28.2.2:8888
+INFO   | jvm 1    | 2013/11/12 12:22:07 | Information Workbench Server URL: http://172.28.2.2:8888
+INFO   | jvm 1    | 2013/11/12 12:22:07 | 
+INFO   | jvm 1    | 2013/11/12 12:22:07 | press key to shutdown
+INFO   | jvm 1    | 2013/11/12 12:22:17 |  INFO [qtp1182931210-61] (FSession.java:129) - Created new FSession context= ID=1rf7x4fjaw2zhu25utpphw8el
+INFO   | jvm 1    | 2013/11/12 12:22:33 |  INFO [qtp1182931210-60] (Authenticator.java:94) - authenticateWithPassword successful for user "admin"
+INFO   | jvm 1    | 2013/11/12 12:22:33 |  INFO [qtp1182931210-60] (LoginSSO.java:91) - SSO context stored. 1o0t09d4cpjwlwk4a0fo9ywaz / 
+INFO   | jvm 1    | 2013/11/12 12:23:58 |  WARN [qtp1182931210-61] (FileResource.java:200) - EXCEPTION 
+INFO   | jvm 1    | 2013/11/12 12:23:58 | java.io.IOException: Синтаксическая ошибка в имени файла, имени папки или метке тома
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at java.io.Win32FileSystem.canonicalize(Win32FileSystem.java:414)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at java.io.File.getCanonicalPath(File.java:589)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.util.resource.FileResource.getAlias(FileResource.java:185)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ContextHandler.getResource(ContextHandler.java:1526)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.webapp.WebAppContext.getResource(WebAppContext.java:320)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.webapp.WebAppContext$Context.getResource(WebAppContext.java:1231)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.DefaultServlet.getResource(DefaultServlet.java:367)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.ResourceCache.lookup(ResourceCache.java:189)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.DefaultServlet.doGet(DefaultServlet.java:446)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:598)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1367)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:77)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:226)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at com.fluidops.servlet.CachingFilter.doFilter(CachingFilter.java:98)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at com.fluidops.servlet.XSSSafeHttpRequestFilter.doFilter(XSSSafeHttpRequestFilter.java:83)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at com.fluidops.servlet.LoginFilterBase.doFilter(LoginFilterBase.java:155)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at java.lang.Thread.run(Thread.java:724)
+INFO   | jvm 1    | 2013/11/12 12:23:58 |  WARN [qtp1182931210-61] (FileResource.java:200) - EXCEPTION 
+INFO   | jvm 1    | 2013/11/12 12:23:58 | java.io.IOException: Синтаксическая ошибка в имени файла, имени папки или метке тома
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at java.io.Win32FileSystem.canonicalize(Win32FileSystem.java:414)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at java.io.File.getCanonicalPath(File.java:589)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.util.resource.FileResource.getAlias(FileResource.java:185)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ContextHandler.getResource(ContextHandler.java:1526)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.webapp.WebAppContext.getResource(WebAppContext.java:320)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.webapp.WebAppContext$Context.getResource(WebAppContext.java:1231)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.DefaultServlet.getResource(DefaultServlet.java:367)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.ResourceCache.lookup(ResourceCache.java:189)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.DefaultServlet.doGet(DefaultServlet.java:464)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:598)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1367)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:77)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:226)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at com.fluidops.servlet.CachingFilter.doFilter(CachingFilter.java:98)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at com.fluidops.servlet.XSSSafeHttpRequestFilter.doFilter(XSSSafeHttpRequestFilter.java:83)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at com.fluidops.servlet.LoginFilterBase.doFilter(LoginFilterBase.java:155)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+INFO   | jvm 1    | 2013/11/12 12:23:58 | 	at java.lang.Thread.run(Thread.java:724)
+INFO   | jvm 1    | 2013/11/12 12:30:00 |  WARN [qtp1182931210-65] (ParseErrorLogger.java:41) - [Rio error] '48' is not a valid value for datatype http://www.w3.org/2001/XMLSchema#gYear (-1, -1)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | ERROR [qtp1182931210-65] (ReadWriteDataManagerImpl.java:1401) - '48' is not a valid value for datatype http://www.w3.org/2001/XMLSchema#gYear
+INFO   | jvm 1    | 2013/11/12 12:30:00 | org.openrdf.rio.RDFParseException: '48' is not a valid value for datatype http://www.w3.org/2001/XMLSchema#gYear
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:289)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:236)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.helpers.RDFParserHelper.createLiteral(RDFParserHelper.java:147)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.helpers.RDFParserBase.createLiteral(RDFParserBase.java:452)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.turtle.TurtleParser.parseQuotedLiteral(TurtleParser.java:666)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.turtle.TurtleParser.parseValue(TurtleParser.java:597)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:473)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:399)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:392)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:356)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:246)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:203)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:148)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.repository.util.RDFLoader.loadInputStreamOrReader(RDFLoader.java:325)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.repository.util.RDFLoader.load(RDFLoader.java:222)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:289)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.openrdf.repository.base.RepositoryConnectionWrapper.add(RepositoryConnectionWrapper.java:179)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.iwb.monitoring.ReadMonitorRepositoryConnection.add(ReadMonitorRepositoryConnection.java:218)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.iwb.api.ReadWriteDataManagerImpl.importRDFfromInputStream(ReadWriteDataManagerImpl.java:1397)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.iwb.widget.ImportRDFWidget.importData(ImportRDFWidget.java:703)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.iwb.widget.ImportRDFWidget$5.onClick(ImportRDFWidget.java:529)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.ajax.components.FButton.handleClientSideEvent(FButton.java:73)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.ajax.AjaxServlet.doGet(AjaxServlet.java:291)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.ajax.AjaxServlet.service(AjaxServlet.java:150)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:598)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1367)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:77)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:226)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.servlet.CachingFilter.doFilter(CachingFilter.java:98)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.servlet.XSSSafeHttpRequestFilter.doFilter(XSSSafeHttpRequestFilter.java:83)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.servlet.LoginFilterBase.doFilter(LoginFilterBase.java:155)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at java.lang.Thread.run(Thread.java:724)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | ERROR [qtp1182931210-65] (ImportRDFWidget.java:535) - java.lang.RuntimeException: org.openrdf.rio.RDFParseException: '48' is not a valid value for datatype http://www.w3.org/2001/XMLSchema#gYear
+INFO   | jvm 1    | 2013/11/12 12:30:00 | java.lang.RuntimeException: java.lang.RuntimeException: org.openrdf.rio.RDFParseException: '48' is not a valid value for datatype http://www.w3.org/2001/XMLSchema#gYear
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.iwb.widget.ImportRDFWidget.importData(ImportRDFWidget.java:709)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.iwb.widget.ImportRDFWidget$5.onClick(ImportRDFWidget.java:529)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.ajax.components.FButton.handleClientSideEvent(FButton.java:73)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.ajax.AjaxServlet.doGet(AjaxServlet.java:291)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at com.fluidops.ajax.AjaxServlet.service(AjaxServlet.java:150)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:598)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1367)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:77)
+INFO   | jvm 1    | 2013/11/12 12:30:00 | 	at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:226)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at com.fluidops.servlet.CachingFilter.doFilter(CachingFilter.java:98)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at com.fluidops.servlet.XSSSafeHttpRequestFilter.doFilter(XSSSafeHttpRequestFilter.java:83)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at com.fluidops.servlet.LoginFilterBase.doFilter(LoginFilterBase.java:155)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1338)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.Server.handle(Server.java:350)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at java.lang.Thread.run(Thread.java:724)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | Caused by: java.lang.RuntimeException: org.openrdf.rio.RDFParseException: '48' is not a valid value for datatype http://www.w3.org/2001/XMLSchema#gYear
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at com.fluidops.iwb.api.ReadWriteDataManagerImpl.importRDFfromInputStream(ReadWriteDataManagerImpl.java:1403)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at com.fluidops.iwb.widget.ImportRDFWidget.importData(ImportRDFWidget.java:703)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	... 41 more
+INFO   | jvm 1    | 2013/11/12 12:30:01 | Caused by: org.openrdf.rio.RDFParseException: '48' is not a valid value for datatype http://www.w3.org/2001/XMLSchema#gYear
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:289)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:236)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.helpers.RDFParserHelper.createLiteral(RDFParserHelper.java:147)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.helpers.RDFParserBase.createLiteral(RDFParserBase.java:452)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.turtle.TurtleParser.parseQuotedLiteral(TurtleParser.java:666)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.turtle.TurtleParser.parseValue(TurtleParser.java:597)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.turtle.TurtleParser.parseObject(TurtleParser.java:473)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.turtle.TurtleParser.parseObjectList(TurtleParser.java:399)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.turtle.TurtleParser.parsePredicateObjectList(TurtleParser.java:392)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:356)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:246)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:203)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:148)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.repository.util.RDFLoader.loadInputStreamOrReader(RDFLoader.java:325)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.repository.util.RDFLoader.load(RDFLoader.java:222)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.repository.base.RepositoryConnectionBase.add(RepositoryConnectionBase.java:289)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at org.openrdf.repository.base.RepositoryConnectionWrapper.add(RepositoryConnectionWrapper.java:179)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at com.fluidops.iwb.monitoring.ReadMonitorRepositoryConnection.add(ReadMonitorRepositoryConnection.java:218)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	at com.fluidops.iwb.api.ReadWriteDataManagerImpl.importRDFfromInputStream(ReadWriteDataManagerImpl.java:1397)
+INFO   | jvm 1    | 2013/11/12 12:30:01 | 	... 42 more
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [serviceMain] (IwbStart.java:151) - Exiting Information Workbench
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (IwbStart.java:320) - Shutting down IWB timers...
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (TimerRegistry.java:75) - Shutting down provider service timer
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (TimerRegistry.java:107) - Shutting down communication service timer
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (IwbStart.java:330) - Shutting down keyword search engine...
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (IwbStart.java:335) - Shutting down global data manager...
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (IwbStart.java:339) - Shutting down global repository...
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (IwbStart.java:349) - -> repository shut down.
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (IwbStart.java:356) - Shutting down global history repository...
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (IwbStart.java:370) - -> repository was shut down already.
+INFO   | jvm 1    | 2013/11/12 12:32:26 |  INFO [Thread-12] (IwbStart.java:373) - Shutting down dynamic services
+STATUS | wrapper  | 2013/11/12 12:32:28 | <-- Wrapper Stopped

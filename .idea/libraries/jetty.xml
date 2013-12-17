@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="jetty">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-deploy-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-security-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-continuation-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/servlet-api-3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-jmx-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-webapp-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-servlet-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-io-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-server-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-xml-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-http-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-util-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-servlets-8.1.3.v20120416.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty/jetty-client-8.1.3.v20120416.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

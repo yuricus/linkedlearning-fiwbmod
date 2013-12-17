@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="jsp-2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jsp-2.1/javax.el-2.2.0.v201108011116.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsp-2.1/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsp-2.1/javax.servlet.jsp-2.2.0.v201112011158.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsp-2.1/org.apache.jasper.glassfish-2.2.2.v201112011158.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsp-2.1/com.sun.el-2.2.0.v201108011116.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsp-2.1/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsp-2.1/org.eclipse.jdt.core-3.7.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

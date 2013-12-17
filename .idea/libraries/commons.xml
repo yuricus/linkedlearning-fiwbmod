@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="commons">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons/commons-discovery-0.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons/commons-fileupload-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons/commons-cli-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons/commons-io-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons/commons-lang-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons/commons-net-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons/commons-httpclient-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons/commons-codec-1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
